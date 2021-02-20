@@ -1,6 +1,13 @@
 require "sinatra"
-require "sinatra/reloader"
 require_relative "./app/ruby/cat_images_client.rb"
+
+if development?
+  require "sinatra/reloader"
+end
+
+unless ENV["PORT"].nil?
+  set :port, ENV["PORT"]
+end
 
 get "/" do
   cat_client = CatImagesClient.new
