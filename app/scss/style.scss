@@ -1,0 +1,19 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::befere, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  color: #ffffff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
